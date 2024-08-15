@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"gihub.com/izzuddinafif/coin-api-go/internal/middleware"
 	"github.com/go-chi/chi"
 	chimiddle "github.com/go-chi/chi/middleware"
+	"github.com/izzuddinafif/coin-api-go/internal/middleware"
 )
 
 func Handler(r *chi.Mux) {
