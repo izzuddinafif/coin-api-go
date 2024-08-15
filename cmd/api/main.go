@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/chi-go/chi"
+	"github.com/go-chi/chi"
 	"github.com/izzuddinafif/coin-api-go/internal/handlers"
 	log "github.com/sirupsen/logrus"
 )
@@ -25,6 +25,6 @@ func main() {
                                         `)
 	err := http.ListenAndServe("localhost:8080", r)
 	if err != nil {
-		return nil, err
+		log.Error(err)
 	}
 }
